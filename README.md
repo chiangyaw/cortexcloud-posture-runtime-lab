@@ -16,4 +16,4 @@ In this workshop, you'll learn how to leverage Cortex Cloud to secure your cloud
 * Get an overview of Cortex Cloud and its capabilities
 * Learn how to integrate Cortex Cloud with containerized workloads and cloud environment such as AWS
 
-Click [here] to get started!
+Click [here](/01-AWSCloudShell.md) to get started!
