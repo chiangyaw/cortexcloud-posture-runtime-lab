@@ -38,4 +38,4 @@ Note: The data ingestion to Cortex Cloud will take some time. For the data to be
 There would be situation where your Cloudformation stack will be be on "Rollback" status, due to deployment failure. This is most likely due to having a single AWS account shared across different team members. To rectify this, re-run the onboarding procedure, and untick "Collect Audit Logs (CloudTrail)".
 ![](/resources/cc-09.png?raw=true)
 
-Click [here]() to move to the next section!
+Click [here](/05-CortexCloudPostureSecurity.md) to move to the next section!
