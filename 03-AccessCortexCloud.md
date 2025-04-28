@@ -11,4 +11,4 @@ As part of this lab, which is the main part of the lab, you will need to have ac
 
 3. To complete this lab, you will need both posture and runtime license. Click on Settings > Cortex License. Run through the licenses available as part of this Cortex Cloud tenant. If you see "Cloud Posture Workloads" and "Cloud Runtime Workloads", you're good to go.
 
-Move on to the next section [here]().
+Move on to the next section [here](/04-OnboardAWStoCortexCloud.md).
