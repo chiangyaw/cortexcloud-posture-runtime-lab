@@ -33,4 +33,22 @@ Before we move on to Cortex Cloud, we will first need to deploy the AWS vulnerab
 
 5. You should see Terraform creating the resources slowly. It will take a couple of minutes for the infrastructure to be provisioned completely. 
 
-You can move on to the next section while waiting. Click [here] to the next section.
+
+### Checking on the AWS EKS deployed
+An AWS Elastic Kubernetes Service (EKS) cluster has been or will be deployed as part of this AWS Vulnerable Infrastructure, and some malicious pods will be deployed together. To check out what has been deployed, you can look into the following YAML manifest file [here](https://github.com/hankthebldr/CDR/blob/master/cdr.yml). 
+
+1. To verify what has been deployed, first you will need to get the updated kubeconfig on AWS Cloudshell, and authenticate to the AWS EKS cluster:
+    ```
+    aws eks update-kubeconfig --region <region> --name <cluster-name>
+    kubectl get nodes
+    ```
+    When you run the items above, you should get a response stating that the worker node is in Ready state. 
+
+2. To check on the pods running on the cluster, run the following:
+    ```
+    kubectl get pods -A
+    ```
+
+You should see all the pods deployed in this AWS EKS cluster. Some of them are the core components of the cluster, but some of them are part of the CDR YAML manifest. If you see all of them running, the deployment is successsful.
+
+You can move on to the next section while waiting. Click [here](/03-AccessCortexCloud.md) to the next section.

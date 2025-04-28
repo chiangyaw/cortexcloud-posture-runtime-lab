@@ -59,6 +59,17 @@ Using the Query Builder, you can hunt for other activity involving these indicat
 
 As part of the initial XDR agent policy & profile configuration, you should see most of the issues are "Detected". In actual production environment, we should have the policy and profile to be set as "Prevent", so that all these threat can be prevented before damage is done in the environment. 
 
+
+### Threat Prevention
+Now you have experience how the XDR agent would "detect" the threat. How about changing the profiles to prevention now?
+1. On The Cortex Cloud tenant, look into the Exploitation and Malware profile that you have created, change all the settings to "Prevent", and save it. Give it a few minutes for the agent to be updated.
+2. Look into the same case again, notice the action of the issues.
+3. On the AWS Cloudshell, run the following command, and check out the pods
+    ```
+    kubectl get pods -A
+    ```
+Do you notice any difference as per compared to before?
+
 This lab does not include Threat Response and Automation which can be configured in Cortex Cloud. This will be added in the future!
 
 Once you have verified the issues and cases, move on to the next section [here](/08-CortexCloudAppSec.md)!
