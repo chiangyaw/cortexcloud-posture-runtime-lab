@@ -5,7 +5,10 @@ This is the last section of the Cortex Cloud Hands-On Lab. You can choose to pla
 ### Clean Up AWS Vulnerable Infrastructure
 1. Go to AWS Cloudshell, make sure you're in the same terraform folder (eg. `aws-vul-infra`) that you have provisioned the infrastructure, run the following:
     ```
-    terraform destroy --auto-approve
+    terraform destroy \
+    -var "unique_prefix=<XXX>" \
+    -var "region=<XXX> \
+    --auto-approve
     ```
 
 2. It will take some time for the resources to be deleted completely. If you're seeing some errors, you might need to delete the resource(s) manually through AWS Management Console. 
