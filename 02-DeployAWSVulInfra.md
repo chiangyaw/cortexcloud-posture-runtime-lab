@@ -27,7 +27,7 @@ Before we move on to Cortex Cloud, we will first need to deploy the AWS vulnerab
     ```
     terraform apply \
     -var "unique_prefix=<XXX>" \
-    -var "region=<XXX> \
+    -var "region=<XXX>" \
     --auto-approve
     ```
 

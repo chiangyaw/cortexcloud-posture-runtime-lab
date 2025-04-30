@@ -7,7 +7,7 @@ This is the last section of the Cortex Cloud Hands-On Lab. You can choose to pla
     ```
     terraform destroy \
     -var "unique_prefix=<XXX>" \
-    -var "region=<XXX> \
+    -var "region=<XXX>" \
     --auto-approve
     ```
 
