@@ -6,7 +6,7 @@
 In this workshop, you'll learn how to leverage Cortex Cloud to secure your cloud environment. This workshop will cover Posture & Runtime Security.
 
 #### Prerequisites
-* Access to Cortex Cloud Lab Tenant
+* Access to Cortex Cloud Lab Tenant 
 * AWS Cloud Account
 * A willingness to learn and experiment
 * A laptop where you can install or already have the following:
